@@ -88,7 +88,7 @@ define redis::instance (
         $real_redis_max_clients = $redis_max_clients
       }
     }
-    /^2\.[6|7|8]\.\d+$/: {
+    /^2\.[6|8]\.\d+$/: {
       $real_redis_max_clients = $redis_max_clients
     }
     default: {
